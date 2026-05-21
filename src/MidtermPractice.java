@@ -1,3 +1,4 @@
+import java.sql.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -53,6 +54,19 @@ public class MidtermPractice {
         boolean arrayResult = allDivisibleBy3(array);
 
         System.out.println(arrayResult);
+
+        //check if all words start with the letter a.
+        List<String> word = new ArrayList<>();
+        word.add("asked");
+
+        word.add("are");
+
+        word.add("as");
+
+
+        boolean check = allStartWithA(word);
+
+        System.out.println(check);
     }
 
     /**
@@ -150,6 +164,12 @@ public class MidtermPractice {
      * Example: input: ["apple", "banana", "avocado"] -> output: false
      */
     public static boolean allStartWithA(List<String> list) {
+        for(String l : list) {
+            if(l.startsWith("a")) {
+                return true;
+            }
+        }
+
         return false;
     }
 
