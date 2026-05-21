@@ -165,12 +165,12 @@ public class MidtermPractice {
      */
     public static boolean allStartWithA(List<String> list) {
         for(String l : list) {
-            if(l.startsWith("a")) {
-                return true;
+            if(!l.startsWith("a")) {
+                return false;
             }
         }
 
-        return false;
+        return true;
     }
 
     /**
