@@ -45,6 +45,14 @@ public class MidtermPractice {
         maps.put("c", 7);
 
         System.out.println(countOddNumbers(maps));
+
+        //all divisible by 3 in an int array
+
+        int array[] = {3, 6, 9, 12, 16};
+
+        boolean arrayResult = allDivisibleBy3(array);
+
+        System.out.println(arrayResult);
     }
 
     /**
@@ -125,7 +133,13 @@ public class MidtermPractice {
      * Example 2: input: [3, 4, 6, 9] -> output: false
      */
     public static boolean allDivisibleBy3(int[] arr) {
-        return false;
+        for(int a : arr) {
+            if(a % 3 != 0) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     /**
